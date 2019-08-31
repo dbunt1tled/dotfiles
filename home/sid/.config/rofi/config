@@ -1,0 +1,26 @@
+!rofi.modi:                           combi,calc:qalc -t
+rofi.combi-modi:         window,run,drun
+!rofi.fullscreen:        true
+!rofi.width:             100
+!rofi.lines:             5
+!rofi.columns:           1
+rofi.font:               Iosevka 10
+!rofi.bw:                0
+!rofi.padding:           400
+!rofi.eh:                2
+!rofi.separator-style:   none
+rofi.hide-scrollbar:    true
+!rofi.location:          0
+!rofi.line-padding:      10
+rofi.separator-style:   dash
+!rofi.fixed-num-lines:   false
+rofi.show-icons:        true
+
+!rofi.color-enabled: true
+!rofi.color-normal: #00282828,  #ebdbb2,  #00282828,  #003c3836,  #98971a
+!rofi.color-urgent: #00282828,  #ebdbb2,  #00282828,  #003c3836,  #98971a
+!rofi.color-active: #00282828,  #ebdbb2,  #00282828,  #003c3836,  #98971a
+!rofi.color-window: #ee282828, #ee282828, #ee928374
+rofi.theme: ~/.config/rofi/sidebar.rasi
+!rofi.theme: ~/.config/rofi/i3.rasi
+!rofi.theme: ~/.config/rofi/theme.rasi
