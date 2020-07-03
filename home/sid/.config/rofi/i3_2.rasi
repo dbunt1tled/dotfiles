@@ -1,0 +1,80 @@
+configuration {
+    display-drun:                   "app";
+    display-window:                 "window";
+    show-icons:true;
+}
+ 
+* {
+    lines: 15;
+    columns: 2;
+    background-color: #191e2a;
+    border-color: #191e2a;
+    text-color: #cbccc6;
+    font: "Roboto 9";
+}
+ 
+#window {
+    border: 0;
+    border-radius: 0px;
+    padding: 10px;
+    width: 35%;
+    height: 33.33%;
+}
+ 
+#mainbox {
+    background-color: #191e2a;
+    children: [inputbar, listview];
+    spacing: 10px;
+    /*margin: 20%;*/
+    padding: 0 0 0 0;
+    border: 15px;
+    border-color: @base0D;
+}
+ 
+ 
+#listview {
+    background-color: #191e2a;
+    fixed-height: 0;
+    border: 0px;
+    spacing: 5px;
+    scrollbar: false;
+    padding: 10px 0px 0px;
+}
+ 
+#element {
+    background-color: #191e2a;
+    border: 0;
+    border-radius: 30px;
+    padding: 4 4 4 4 ;
+}
+ 
+#element selected {
+    background-color: #c50ed2;
+    text-color: #ffffff;
+}
+ 
+ 
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    background-color: #191e2a00;
+}
+ 
+#case-indicator {
+    background-color: #191e2a;
+    spacing:    0;
+}
+#entry {
+    background-color: #191e2a;
+    spacing:    0;
+}
+#prompt {
+    background-color: #191e2a;
+    spacing:    0;
+}
+ 
+#textbox-prompt-colon {
+    background-color: #191e2a00;
+    expand:     false;
+    str:        " ⌁";
+    margin:     0px 0.3em 0em 0em ;
+}

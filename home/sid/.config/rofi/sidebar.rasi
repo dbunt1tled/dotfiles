@@ -8,9 +8,11 @@ configuration {
     kb-mode-previous: "Shift+Left";
     display-drun:    "Activate";
     display-run:     "Run";
-    display-window:  "Switch";
+    /*display-window:  "Switch";*/
     show-icons:      true;
-    sidebar-mode:    true;
+    sidebar-mode:    false;
+    lines: 5;
+    columns: 2;
 }
 
 * {
@@ -18,7 +20,7 @@ configuration {
     text-color:                  #d3d7cf;
     opacity:		         50%;
     selbg:                       #215d9c;
-    actbg:                       #262626;
+    actbg:                       #AD00FF;
     urgbg:                       #e53935;
     winbg:			 #26c6da;
 
@@ -49,8 +51,8 @@ window {
     transparency: "real";
     location: center;
     anchor: east;
-    height:		 50%;
-    width:		 45%;
+    height:		 30%;
+    width:		 30%;
     orientation: vertical;
     children:	 [mainbox];
     border-radius: 5px;
@@ -61,7 +63,9 @@ mainbox {
     children: [ entry,listview,sidebar ];
 }
 
-button { padding: 5px 2px; }
+button { 
+     padding: 2px 2px;
+}
 
 button selected {
     background-color: @active-background;
@@ -86,7 +90,7 @@ entry {
     expand:         false;
     text-color:     @normal-foreground;
     vertical-align: 1;
-    padding:        5px;
+    padding:        2px;
 }
 
 element normal.normal {
@@ -100,15 +104,15 @@ element normal.urgent {
 }
 
 element normal.active {
-    background-color: @active-background;
+    background-color: @selected-normal-background;
     text-color:       @active-foreground;
 }
 
 element selected.normal {
     background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-    border:           0 5px solid 0 0;
-    border-color:	    @active-background;
+    text-color:       #d3d7cf;
+    /* border:           0 5px solid 0 0; */
+    /* border-color:	    @active-background; */
 }
 
 element selected.urgent {
@@ -117,8 +121,8 @@ element selected.urgent {
 }
 
 element selected.active {
-    background-color: @selected-active-background;
-    text-color:       @selected-active-foreground;
+    background-color: @selected-normal-background;
+    text-color:       #d3d7cf;
 }
 
 element alternate.normal {

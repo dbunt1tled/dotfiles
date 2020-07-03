@@ -60,7 +60,7 @@
     stack_duplicates = false
     hide_duplicate_count = yes
     show_indicators = no
-    icon_position = off
+    icon_position = left
     sticky_history = yes
     history_length = 20
     always_run_script = true
