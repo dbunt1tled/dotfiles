@@ -275,7 +275,7 @@ exec_always killall compton; compton -bcCGf -i 0.9 -e 0.9 --no-fading-openclose 
 #exec urxvt
 bindsym $mod+x exec ~/.config/polybar/lock.sh
 #exec_always ~/.screenlayout/./screen.sh
-exec_always ~/.config/polybar/polybar.sh
+exec_always ~/.config/polybar/launch.sh
 exec killall dunst && dunst -conf ~/.config/dunst/dunstrc &
 #exec redshift -O 5000 &
 exec xautolock -locker ~/.config/polybar/lock.sh -time 5 &
