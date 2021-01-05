@@ -2,4 +2,6 @@
 	email = unt1tled@ua.fm
 	name = Denis
 [core]
-	autocrlf = input
+	excludesfile = /home/user/.gitignore
+        filemode = false
+        autocrlf = true
